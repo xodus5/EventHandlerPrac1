@@ -24,7 +24,9 @@ namespace EventHandlerPrac
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Button btn = (Button)sender;
 
+            MessageBox.Show(btn.Text + "버튼이 클릭되었습니다.");
         }
 
         private void button2_Click(object sender, EventArgs e)
