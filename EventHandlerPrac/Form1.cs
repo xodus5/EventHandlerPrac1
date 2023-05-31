@@ -26,6 +26,16 @@ namespace EventHandlerPrac
         {
             Button btn = (Button)sender;
 
+            if(btn == button1)
+            {
+                button1.Enabled = false;
+                button1.Enabled = true;
+            } else if (btn == button2)
+            {
+                button1.Enabled = true;
+                button2.Enabled = false;
+            }
+
             MessageBox.Show(btn.Text + "버튼이 클릭되었습니다.");
         }
 
